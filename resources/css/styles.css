@@ -15,7 +15,7 @@ body {
   text-align: center;
 }
 
-/* header */
+/* header and Nav */
 header {
   position: fixed;
   display: flex;
@@ -24,34 +24,32 @@ header {
 
   background-color: black; /* to keep things from showing through */
   border-bottom: 1px solid seashell;
-  height: 80px;
+  height: 65px;
   width: 100%;
 }
 
 header .logo {
-  color: MediumAquamarine;
   display: inline-flex;
-  align-items: center;
   flex-grow: 1;
-  padding-left: 30px;
+  margin-left: 10px; /* add space between image and text */
 }
 
 header .logo img {
-  margin-right: 10px; /* add space between image and text */
+  height: 50px;
 }
 
 header nav {
-  padding-right: 40px; /* push entire nave to the left */
+  margin-right: 10px; /* push entire nave to the left */
 }
 
-/* nav settings apply to both header and footer */
 nav span {
   display: inline-block;
-  padding: 20px 10px;
+  margin-left: 10px; /* allows space between items without affecting the location */
 }
 
 nav a {
-  color: black;
+  color: seashell;
 }
 
 /* Main Body */
+/* Hero graphic */
