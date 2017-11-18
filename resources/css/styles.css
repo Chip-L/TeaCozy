@@ -9,7 +9,7 @@ body {
   text-align: center;
 }
 
-h2, h4 {
+h2, h3, h4 {
   margin: 0; /* remove the margin and allow the padding to provide the spacing */
   padding: 10px;
 }
@@ -60,11 +60,13 @@ nav a {
   align-items: center;
 }
 
-/* Hero graphic */
+/* Hero graphic placement for both misshion and location */
 .hero {
   display: flex;
   align-items: center;
+}
 
+.hero.mission {
   height: 700px;
   background-image: url("../images/img-mission-background.jpg");
 }
@@ -89,18 +91,40 @@ nav a {
   flex-wrap: wrap;
 }
 
-.item {
+.tea-item {
   display: block;
 }
 
-.item img {
+.tea-item img {
   height: 200px;
   width: 300px;
   margin: 10px;
 }
 
-.item span {
+.tea-item span {
   display: block;
   margin: 0px;
   padding-bottom: 15px;
+}
+
+/* locations */
+.hero.location {
+  background-image: url("../images/img-locations-background.jpg");
+  height: 500px;
+}
+
+.content {
+  width: 1200px;
+}
+
+.location-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  height: 300px;
+  width:  300px;
+  opacity: 1;
+  margin: 5px 20px; /* "location" is h4 which is already padded to 10px. */
+  background-color: black;
 }
