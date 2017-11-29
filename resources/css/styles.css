@@ -9,6 +9,8 @@ body {
   text-align: center;
 }
 
+/* set the size of the headers thorughout the document. This will set the
+   spacing around all of these correctly. */
 h2, h3, h4 {
   margin: 0; /* remove the margin and allow the padding to provide the spacing */
   padding: 10px;
@@ -47,23 +49,28 @@ nav span {
 }
 
 nav a {
-  color: seashell;
+  color: seashell; /* override webkit colors */
 }
 
 /* Main Body */
 .main {
   position: relative;
-  padding-top: 70px;
+  padding-top: 70px;  /* space for the header */
 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Hero graphic placement for both misshion and location */
+/* Hero graphic placement for both mission statement and location sections */
 .hero {
   display: flex;
   align-items: center;
+}
+
+/* container that just sets the width of the section */
+.content {
+  width: 1200px;
 }
 
 .hero.mission {
@@ -73,7 +80,6 @@ nav a {
 
 .hero .text {
   background-color: black;
-  width: 1200px;
 }
 
 /* Featured Teas */
@@ -85,12 +91,14 @@ nav a {
   padding: 68px;
 }
 
+/* list will get used for both the featured teas and the locations */
 .list {
   display: inline-flex;;
   justify-content: center;
   flex-wrap: wrap;
 }
 
+/* How to display tea items in the list */
 .tea-item {
   display: block;
 }
@@ -113,10 +121,7 @@ nav a {
   height: 500px;
 }
 
-.content {
-  width: 1200px;
-}
-
+/* How to display location items in the list */
 .location-item {
   display: flex;
   flex-direction: column;
@@ -129,6 +134,17 @@ nav a {
   background-color: black;
 }
 
+/* set the size of the Contact Us section */
 .contact {
   height: 200px;
+}
+
+/* footer magic */
+footer {
+  width: 100%;
+}
+
+footer h5 {
+  margin-left: 20px;
+  text-align: left;
 }
